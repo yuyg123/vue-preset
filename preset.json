@@ -1,78 +1,25 @@
 {
+  "useTaobaoRegistry": true,
   "useConfigFiles": true,
-
-  "cssPreprocessor": "less",
-
-  "plugins": {
-
-    "@vue/cli-plugin-babel": {
-      "version": "^3.0.0"
-    },
-
-    "@vue/cli-plugin-eslint": {
-      "version": "^3.0.0",
-
-      "config": "recommended",
-
-      "lintOn": ["save", "commit"]
-    }
-  },
-
-  "configs": {
-
-    "vue": {
-      "baseUrl": "/",
-
-      "outputDir": "dist",
-
-      "assetsDir": "static",
-
-      "filenameHashing": true,
-
-      "lintOnSave": true,
-
-      "runtimeCompiler": false,
-
-      "transpileDependencies": [],
-
-      "productionSourceMap": false,
-
-      "pages": {
-        "index": {
-          "entry": "src/main.js",
-          "template": "public/index.html",
-          "filename": "index.html",
-          "title": "首页",
-          "chunks": ["chunk-vendors", "chunk-common", "index"]
-        }
-      },
-
-      "devServer": {
-        "open": true,
-
-        "host": "127.0.0.1",
-
-        "https": false,
-
-        "hotOnly": false,
-
-        "proxy": null
-      },
-
-      "pwa": {},
-
-      "pluginOptions": {}
-    },
-
-    "postcss": {},
-
-    "eslintConfig": {
-    }
-  },
-
-  "router": true,
-
+  "router": false,
   "vuex": false,
-
-  "routerHistoryMode": false
+  "cssPreprocessor": "node-sass",
+  "plugins": {
+    "@vue/cli-plugin-babel": {},
+    "@vue/cli-plugin-eslint": {
+      "config": "standard",
+      "lintOn": [
+        "save",
+        "commit"
+      ]
+    },
+    "@vue/cli-plugin-unit-jest": {}
+  },
+  "configs": {
+    "eslintConfig": {
+      "rules": {
+        "no-alert": 0
+      }
+    }
+  }
 }
