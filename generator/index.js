@@ -2,12 +2,6 @@ module.exports = (api, options, rootOptions) => {
   // 复制并用 ejs 渲染 `./template` 内所有的文件
   api.render('../template')
   // 修改 `package.json` 里的字段
-  const px2rem = require('postcss-px2rem');
-  // 配置基本大小
-  const postcss = px2rem({
-    // 基准大小 baseSize，需要和rem.js中相同
-    remUnit: 16
-  });
   api.extendPackage({
     dependencies: {
       "core-js": "^3.6.5",
@@ -77,7 +71,9 @@ module.exports = (api, options, rootOptions) => {
       }
     },
     postcss: {
-      "plugins": [postcss]
+      "plugins": {
+        "autoprefixer": {}
+      }
     },
     browserslist: [
       "> 1%",
