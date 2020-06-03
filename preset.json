@@ -50,7 +50,14 @@
       "pluginOptions": {}
     },
 
-    "postcss": {},
+    "postcss": {
+      "plugins": [
+        require('postcss-px2rem').({
+          remUnit: 16
+        })
+      ],
+
+    },
 
     "eslintConfig": {
     }

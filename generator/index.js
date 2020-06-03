@@ -11,7 +11,10 @@ module.exports = (api, options, rootOptions) => {
       "vue-router": "^3.1.3",
       "vuex": "^3.0.1",
       "node-sass": "^4.12.0",
-      "sass-loader": "^8.0.0"
+      "sass-loader": "^8.0.0",
+      "px2rem-loader": "^0.1.9",
+      "postcss-px2rem": "^0.3.0"
+
     },
     devDependencies: {
       "@vue/cli-plugin-babel": "^4.4.0",
