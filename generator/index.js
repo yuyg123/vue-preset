@@ -1,4 +1,4 @@
-module.exports = (api, options, rootOptions) => {
+module.exports = (api) => {
   // 复制并用 ejs 渲染 `./template` 内所有的文件
   api.render('../template')
   // 修改 `package.json` 里的字段
@@ -17,7 +17,8 @@ module.exports = (api, options, rootOptions) => {
       "@vue/cli-plugin-eslint": "^4.4.0",
       "@vue/cli-service": "^4.4.0",
       "babel-eslint": "^10.1.0",
-      "eslint": "^6.7.2",
+      "@vue/eslint-config-airbnb": "^5.1.0",
+      "eslint": "^7.6.0",
       "eslint-plugin-vue": "^6.2.2",
       "vue-template-compiler": "^2.6.11",
       "@vue/cli-plugin-vuex": "^4.0.0"
