@@ -1,20 +1,18 @@
 import Vue from 'vue';
 import Router from 'vue-router';
 
-const Home = () => import('../views/Home');
-
 Vue.use(Router);
 
 const router = new Router({
   routes: [
     {
       path: '/',
-      redirect: '/home'
+      redirect: '/home',
     }, {
       path: '/home',
       name: '首页',
-      component: Home
-    }]
+      component: () => import('@/views/Home'),
+    }],
 });
 
 router.beforeEach((to, from, next) => {

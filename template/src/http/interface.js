@@ -3,20 +3,16 @@ import axios from './api'; // 倒入 api
  * 如果项目很大可以将 url 独立成文件，接口分成不同的模块
  * 此处的数据依然来自 Easy Mock
  */
-export const GET = config => {
-  return axios({
-    url: config['api'],
-    method: 'get',
-    params: config['params']
-  });
-};
-export const POST = config => {
-  return axios({
-    url: config['api'],
-    method: 'post',
-    data: config['params']
-  });
-};
+export const GET = (config) => axios({
+  url: config.api,
+  method: 'get',
+  params: config.params,
+});
+export const POST = (config) => axios({
+  url: config.api,
+  method: 'post',
+  data: config.params,
+});
 //
 // // 单独倒出
 // export const query = params => {
@@ -47,5 +43,5 @@ export const POST = config => {
 // 根绝需要进行
 export default {
   GET,
-  POST
+  POST,
 };

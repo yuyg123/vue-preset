@@ -4,7 +4,7 @@ export default {
   baseURL: '/',
   // 请求头信息
   headers: {
-    'Content-Type': 'application/json;charset=UTF-8'
+    'Content-Type': 'application/json;charset=UTF-8',
   },
   // 参数
   data: {},
@@ -13,5 +13,5 @@ export default {
   // 携带凭证
   withCredentials: true,
   // 返回数据类型
-  responseType: 'json'
+  responseType: 'json',
 };
