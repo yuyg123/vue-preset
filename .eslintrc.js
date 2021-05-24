@@ -28,6 +28,7 @@ module.exports = {
     'import/no-dynamic-require': 'off',
     'no-continue': 'off',
     'no-mixed-operators': 'off',
+    'comma-dangle': 'off'
   },
   parserOptions: {
     parser: 'babel-eslint',
