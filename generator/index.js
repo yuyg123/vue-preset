@@ -20,6 +20,8 @@ module.exports = (api) => {
       '@vue/eslint-config-airbnb': '^5.1.0',
       eslint: '^7.6.0',
       'eslint-plugin-vue': '^6.2.2',
+      'node-sass': '4.14.1',
+      'sass-loader': '^8.0.2',
       'vue-template-compiler': '^2.6.11',
       '@vue/cli-plugin-vuex': '^4.0.0',
     },
