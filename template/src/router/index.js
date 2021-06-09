@@ -5,13 +5,14 @@ Vue.use(Router);
 
 const router = new Router({
   routes: [
-    {
+
+  {
       path: '/',
       redirect: '/home',
     }, {
       path: '/home',
       name: '首页',
-      component: () => import('@/views/Home'),
+      component: () => import('@/views/Home.vue'),
     }],
 });
 
